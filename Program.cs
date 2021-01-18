@@ -155,12 +155,12 @@ namespace ParseFileNames
                     if (lstData[ind].eye_state == 0)
                     {
                         File.Copy(lstData[ind].origFile.FullName, di.Parent.FullName + 
-                            "\\TrainDataBase\\Close\\"+ lstData[ind].origFile.Name);
+                            "\\TrainDataBase\\Close\\"+ lstData[ind].origFile.Name,true);
                     }
                     else
                     {
                         File.Copy(lstData[ind].origFile.FullName, di.Parent.FullName +
-                                                                  "\\TrainDataBase\\Open\\" + lstData[ind].origFile.Name);
+                                                                  "\\TrainDataBase\\Open\\" + lstData[ind].origFile.Name,true);
 
                     }
                     
